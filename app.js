@@ -33,13 +33,23 @@ if (gender.toLowerCase() === "male") {
     } else if(askSkipMessage == false){
         alert(wMessage)
     }
+
+    console.log("Your name is:", YourName)
+    console.log("Your age after confirmation is", age)
+    console.log("Welcoming message:", wMessage)
+
+
+    let answerarr = [
+        prompt ("Are you sure you are a " + gender + "?", "(Yes/No)") || "invalid",
+        prompt ("Are you a student at ASAC? (Yes/No)" , "(Yes,No)") || "invalid",
+        prompt ("Are you familier with JS? (Yes/No)", "(Yes,No)") || "invalid",
+    ];
+
+
     
+    answerarr.forEach(answer => console.log(answer));
+
    
-
-console.log("Your name is:", YourName)
-console.log("Your age after confirmation is", age)
-console.log("Welcoming message:", wMessage)
-
 
 
 
